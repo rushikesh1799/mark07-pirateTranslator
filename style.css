@@ -1,3 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap");
+
 body {
     background-color: #1e2026;
+    font-family: "Edu SA Beginner", cursive;
+}
+
+#header {
+    color: #FFF;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    position: relative;
+    background-color: black;
+}
+
+#container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5rem;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#container p{
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#txt-input,
+#output {
+    position: relative;
+    color: #FFF;
+    font-weight: 500;
+    width: 90%;
+    height: 5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-family: "Edu SA Beginner", cursive;
+    background-color: rgba(242, 200, 76, 0.1);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#btn-translate{
+    padding: 0.2rem 0.2rem;
+    font-family: "Edu SA Beginner", cursive;
+    width: 10rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+#output {
+    border: 1px solid black;
+    height: 10vh;
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    background-color: #000;
+    color: #FFF;
+    margin-top: 1rem;
+}
+#footer p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#about-text {
+    max-width: 600px;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
 }
