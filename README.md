@@ -6,7 +6,7 @@ Tech Stack : HTML, CSS, Javascript
 
 ## Image 
 <div align="center">
-<img src="" width="60%" height="90%"/>
+<img src="https://raw.githubusercontent.com/rushikesh1799/mark07-pirateTranslator/main/images/Pirates1.png" width="50%"/>
 </div>
 
 ##
