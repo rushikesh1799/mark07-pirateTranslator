@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Jack Sparrow's Pirate Language</title>
-</head>
-<body>
-    
-    <header id="header">
-        <h1>Pirate Talks</h1>
-        <p>“Not all treasure's silver and gold, mate.” -Jack Sparrow.</p>
-    </header>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        <header id="header">
+          <h1>Pirate Talks</h1>
+          <p>“Not all treasure's silver and gold, mate.” -Jack Sparrow.</p>
+        </header>
 
-    <main id="container">
-        <textarea id="txt-input"
-            placeholder="put your sentence in English here and we will convert it to Pirate's Language"></textarea>
-        <button id="btn-translate">Translate</button>
+        <main id="container">
+          <textarea
+            id="txt-input"
+            placeholder="put your sentence in English here and we will convert it to Pirate's Language"
+          ></textarea>
+          <button id="btn-translate">Translate</button>
 
-        <p>Output will come here 👇</p>
-        <div id="output"></div>
-    </main>
+          <p>Output will come here 👇</p>
+          <div id="output"></div>
+        </main>
 
-    <footer id="footer">
-        <p>About</p>
-        <p id="about-text">
-            Are you a fan of Pirates Language? Talk to Pirates using this Pirate Translator.
-        </p>
-    </footer>
+        <footer id="footer">
+          <p>About</p>
+          <p id="about-text">
+            Are you a fan of Pirates Language? Talk to Pirates using this Pirate
+            Translator.
+          </p>
+        </footer>
+      </div>
+    </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
