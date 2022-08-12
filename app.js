@@ -15,11 +15,11 @@ function handleClick() {
     fetch(getTranslationURl(txtInput.value))
         .then(response => response.json())
         .then(json => {
-            console.log(json)
-            // var translatedText = json.contents.translated;
-            // outputDiv.innerText = translatedText;
+            // console.log(json)
+            var translatedText = json.contents.translated;
+            outputDiv.innerText = translatedText;
         })
-        .catch(err => console.log(err))
+        .catch(err => alert(err.message))
 
     // console.log("Clicked");
 }
