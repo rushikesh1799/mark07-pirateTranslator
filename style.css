@@ -1,8 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 body {
-    background-color: #1e2026;
-    font-family: "Edu SA Beginner", cursive;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.parent {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.parent::before {
+    content: "";
+    background-image: url('images/Pirates.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.child {
+    position: relative;
 }
 
 #header {
@@ -17,9 +53,16 @@ body {
     background-color: black;
 }
 
+#header h1{
+    margin: 5px;
+}
+
+#header p{
+    margin: 5px;
+}
+
 #container {
-    position: relative;
-    margin: 0 auto;
+    margin: 0px auto;
     margin-top: 5rem;
     max-width: 600px;
     display: flex;
@@ -30,9 +73,28 @@ body {
 }
 
 #container p{
+    margin: 5px;
     color: #FFF;
+    background-color: black;
+    padding: 5px 5px;
+    border-radius: 5px;
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+#btn-translate{
+    padding: 0.5rem 0.5rem;
+    font-family: "Edu SA Beginner", cursive;
+    width: 10rem;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 1.25rem;
+    border: 2px solid black;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #FFF;
 }
 
 #txt-input,
@@ -40,28 +102,28 @@ body {
     position: relative;
     color: #FFF;
     font-weight: 500;
-    width: 90%;
-    height: 5rem;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    font-family: "Edu SA Beginner", cursive;
+    width: 80%;
+    padding: 2rem;
+    font-size: 1.2rem;
     background-color: rgba(242, 200, 76, 0.1);
     border: 2px solid black;
     border-radius: 10px;
 }
 
-#btn-translate{
-    padding: 0.2rem 0.2rem;
-    font-family: "Edu SA Beginner", cursive;
-    width: 10rem;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 2rem;
-    font-weight: 600;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: #FFF;
+
+textarea {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    resize: none;
+    font-size: 1rem;
+    font-weight: 1000;
+}
+
+::placeholder {
+    color: white;
+    font-size: 15px;
+    opacity: 0.75;
 }
 
 #output {
@@ -70,29 +132,43 @@ body {
     width: 80%;
     margin: 1rem;
     padding: 1rem;
-
+    font-size: 1rem;
 }
+
+
 
 #footer {
-    width: 100%;
+    background-color: black;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 1rem 0;
-    background-color: #000;
+    align-items: center;
     color: #FFF;
-    margin-top: 1rem;
 }
-#footer p {
+
+footer p {
     font-size: 1.5rem;
-    font-weight: 600;
+    padding: 0.25rem;
+    margin: 5px 5px;
 }
 
 #about-text {
-    max-width: 600px;
-    padding: 1rem;
-    font-weight: 500;
-    font-size: 1.8rem;
-    text-align: center;
+    font-size: 1rem;
+    width: 80%;
+    padding: 0.5rem 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header p {
+        width: 80%;
+    }
+
+    #txt-input,
+    #output {
+        width: 80%;
+    }
 }
