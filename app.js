@@ -25,7 +25,7 @@ async function handleClick() {
                 throw new Error(data.error.message);
             }
             const translatedText = data.contents.translated;
-            outputText.textContent = translatedText;
+            outputDiv.textContent = translatedText;
         } catch (err) {
             alert(err);
         }
